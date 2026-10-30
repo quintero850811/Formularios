@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+
+    <!--conectarnos con el css de formularios-->
+    <link rel="stylesheet" href="css/formularios.css">
+
+    <link rel="shortcut icon" href="img/81-imagens-de-destaque_formulario-de-inscricao.png" type="image/x-icon">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html" target="_blank">Login</a>
+        <a href="registro.html" target="_blank">Registro</a>
+    </nav>
+ <h1>Formularios en HTML</h1>
+     
+ </header>
+ <main>
+    <section>
+        <!--formulario 1-->
+        <form action="">
+            <fieldset>
+                <legend>texto</legend>
+
+                <p>Campos de texto básicos: simple, con placeholder,
+                     obligatorio (required), de solo lectura</p>
+                <label for="">Input tipo texto</label>
+                <input type="text">
+                <br>
+
+                <label for="">input tipo texto:</label>
+                <input type="text" placeholder="escribe aqui">
+                <br>
+
+                <label for="">campo obrigatorio required</label>
+                <input type="text"placeholder="campo obligatorio" required>
+                <br>
+
+                <label for="">campo solo lectura readoly</label>
+                <input type="text" readoly placeholder="campo solo lectura">
+                <br>
+
+                <label for="">campo desabilitado disabled</label>
+                <input type="text" disabled placeholder="campo desabilitado">
+                <br>
+
+                <input type="submit" value="enviar">
+                <input type="reset" value="restablecer">
+
+        </fieldset>
+     </form>
+        
+    <form action="">
+        <fieldset>
+        <legend>contacto</legend>
+        <p>campos especializados para datos de contacto: contraseña,
+         correo electronico, telefono y URL, cada uno con su propio teclado
+        y validacion en el navegador.</p>
+
+        <label for="">contraseña</label>
+        <input type="password"placeholder="******">
+        <br>
+
+        <label for="">correo electronico</label>
+        <input type="email"placeholder="correo@ejemplo.com">
+        <br>
+
+        <label for="">numero de telefono</label>
+        <input type="tel"placeholder="+5730034487658">
+        <br>
+
+        <label for="">URL</U></label>
+        <input type="url" placeholder="https://ejemplo.com">
+        <br>
+     
+        <input type="submit" value="enviar">
+        <input type="reset" value="restablecer">
+
+     </fieldset>
+</form>
+
+<form action="">
+    <fieldset>
+        <legend>numericos</legend>
+        <p>Campos para valores numéricos: un número con límites (min/max) y un deslizador (range)
+para elegir un valor dentro de un rango.</p>
+        
+        <label for="">numero</label>
+        <input type="number" min="100" step="1">
+        <br>
+
+        <label for="">rango</label>
+        <input type="rango" min="0" max="100" step="1">
+        <br>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="restablecer">
+    </fieldset>
+
+</form>
+
+<form action="">
+    <fieldset>
+        <legend>fecha y hora</legend>
+        <p>Selectores nativos de fecha y hora: fecha, fecha y hora
+         combinadas, hora, semana del año y mes.</p>
+
+        <label for="">fecha y hora</label>
+        <input type="date">
+        <br>
+
+        <label for="">fecha y Hora</label>
+        <input type="datetime-local">
+        <br>
+
+        <label for="">Hora</label>
+        <input type="time">
+        
+        <label for="">semana</label>
+        <input type="week">
+        <br>
+
+        <label for="">mes</label>
+        <input type="month">
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+        
+
+</fieldset>
+</form>
+
+<form action="">
+    <fieldset>
+        <legend>Seleccion</legend>
+        <p>Controles de selección: elegir un color, marcar una casilla, elegir una opción de un
+grupo de radios y subir un archivo.</p>
+    
+        <label for="">Color</label>
+        <input type="color">
+        <br>
+        <label for="">Casilla de verificación</label>
+        <input type="checkbox">
+        <br>
+        <label for="">Botón de radio</label>
+        <input type="radio" name="radioGroup">
+        <input type="radio" name="radioGroup">
+        <br>
+        <label for="">Archivo</label>
+        <input type="file">
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+
+    </fieldset>
+</form>
+
+    </section>
+ </main>
+    
+</body>
+</html>
